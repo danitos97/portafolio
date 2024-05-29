@@ -1,11 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/calendario.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+
+    <script src="js/index.js" defer></script>
+    <script src="js/calendar.js" defer></script>
+    
+    <div class="scroll">
+        <header>
+            <div>
+                <div class="logo">
+                    Daniel Rivera
+                </div><nav>
+                    <a href="#about-me"><div>About me</div></a>
+                    <a href="#skills"><div>Skills</div></a>
+                    <a href="#works"><div>Works</div></a>
+                    <a href="#contact"><div>Contact</div></a>
+                </nav>
+            </div>
+            
+        </header>
+        <section id="about-me">
+            <div>
+                <div class="animation">
+                    <img src="images/landing-large.gif" alt="Landing Animation" width="800" height ="600" loading="lazy">
+                </div><div class="about">
+                    <!-- <h1>About me</h1> -->
+                    <p>
+                        My name is <b>Luis Daniel Rivera Martínez</b> and Im <b>26</b> years old. 
+                        Im from Tepatitlán de Morelos, Jalisco. Im a computer engineer. 
+                        I have <b>5 years</b> of experience in <b>web development</b>. 
+                        
+                        <!-- I do requirements gathering, analysis, desing, implementation, documentation, maintenance. I like to learn new things and apply my knowledge. -->
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div>      
+                <div class="center">
+                    <h2>Skills</h2>
+                    <div class="text">
+                        
+                        <div class="cuadricula-v2"> 
+                        
+                            <div class="grid">     
+                                <div class="php">  <span> PHP </span></div>
+                                <div class="css">  <span> CSS </span></div>
+                                <div class="js">   <span> JS  </span></div>
+                                <div class="mongo"><span>MONGO</span></div>
+                                <div class="c">    <span> Phaser </span></div>
+                                <div class="html"> <span> HTML</span></div>
+                                <div class="java"> <span> PWA</span></div>
+                                <div class="mysql"><span>MYSQL</span></div>
+                                <div class="node"> <span> NODE</span></div>
+                            </div>
+                            <div class="separador"></div>
+                            <div class="shadow"></div>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <ul class="list">
+                            <li>Team-work</li>
+                            <li>Creativity</li>
+                            <li>Problem-solving</li>
+                            <li>Critical thinking</li>
+                            <li>Responsability</li>
+                            <li>Commitment</li>
+                            <li>Curiosity</li>
+                            <li>Honesty</li>
+                        </ul>
+                        <!-- <div id="orange-grid"></div> -->
+                    </div>
+                    <br><br><br><br><br>
+                    <div class ="text-2">
+
+                        * Currently learning Typescript and Vue.js
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- <section id="works">
+            <div>
+                <div class="center">
+                    <div class="top-secret">
+                        <img src="images/Top_secret.png" alt="">
+                    </div><div class="text">
+                        <h2>Works</h2>
+                        <p>Most of my works are internal systems that I can not display, but that doesn't  mean that I have nothing to show. Next, you will see some of my personal works and one public site that I develop in my job.</p>
+                        <br>
+                        <p>All of them are quite interesting and are worth a look.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="calendar">
+            <div>
+                <div class="center">
+                    <h2 id="works">Works</h2>
+                    <div class="logo">
+                        <div id="calendar-events-container">
+                            <div id="calendar-events"> <!-- events --> </div>
+                        </div>
+                        <br>
+                        <div class="calendar-container">
+                            <div class="calendar visible" lang="en"></div>
+                            <div class="calendar" lang="es"></div>
+                            <div class="calendar" lang="zh"></div>
+                            <div class="calendar" lang="ja"></div>
+                            <div class="calendar" lang="fr"></div>
+                            <div class="calendar" lang="ru"></div>
+                            <div class="calendar" lang="de"></div>
+                            <div class="calendar" lang="in"></div>
+                            <div class="calendar" lang="ar"></div>
+                            <div class="calendar" lang="pt"></div>
+                        </div>
+                        <br>
+                        <label for="calendar-lang">Language: </label>
+                        <select name="calendar-lang" id="calendar-lang">
+                            <option value="0" selected>English</option>
+                            <option value="1">Spanish</option>
+                            <option value="2">Chinesse</option>
+                            <option value="3">Japanese</option>
+                            <option value="4">French</option>
+                            <option value="5">Russian</option>
+                            <option value="6">German</option>
+                            <option value="7">Indonesian</option>
+                            <option value="8">Arabian</option>
+                            <option value="9">Portuguese</option>
+                        </select>
+                        <br><br>
+                    </div>
+                    <div class="text">
+                        <h3>Calendar plugin</h3>
+        
+                        <p>An easy to implement, use and customize component for the web.
+                        <br><br>
+                        <ul>
+                            <li>Vanilla Javascript and CSS.</li>
+                            <li>Build-in event listeners.</li>
+                            <li>Support for 10 different languages.</li>
+                        </ul>
+                        <br>
+                        <a href="https://github.com/danitos97/calendar" target="_blank"><button>GitHub</button></a>
+                    </div>
+                    
+                </div>
+        
+            </div>
+        </section>
+
+
+        <section id="sort">
+            <div>
+              
+                <div class="center">
+                    <div class="logo">
+                        <!-- <img src="images/sort.jpg" alt="" srcset=""> -->
+                        <div class="elementos"></div>
+                    </div><div class="text">
+                        <br>
+                        <h3>Sort</h3>
+                        <p>Visual implementation of some of the most popular sort algorithms.</p>
+                        <a href="sort/" target="_blank"><button>Go to</button></a>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <section id="bingo">
+            <div>
+                <div class="center">
+                    <div class="logo">
+                        <img src="images/logo-final.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Bingo Night</h3>
+                        <p>An interactive Bingo board. Click on a square to roll a ball into scene.  Press the key W for the win animation and R to reset</p>
+                       <a href="https://www.tepatitlan.gob.mx/dif/bingo/?key=AE]ne82Z]R6n5=}w" target="_blank"><button>Go to</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--         
+        <section id="liveout">
+            <div>
+                <div class="center">
+                    <div class="logo">
+                        <img src="images/liveout.png" alt="">
+                        <br><br>
+                    </div><div class="text">
+                        <h3>Liveout</h3>
+                        <p>Musical web app. The main objective of this proyect is to advertise local musicians. Other features are: music player, announce local events, sell tickets. The proyect is still in the blueprints, but I made a demo (it works better on a movil device).</p>
+                        <br>
+                        <div>
+                            <a href="/liveout/" target="_blank"><button class="btn-liveout"><div><h3>Go to</h3></div></button></a>
+                        </div>
+                    </div>
+                   <br>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section id="visitatepa">
+            <div class = "center">
+                di
+
+            </div>
+        </section> -->
+
+        <section id="cpu">
+            <div>
+                <div class="center">
+                    <div class="logo">
+                        <img src="images/cpu.jpg" alt="" srcset="">
+                    </div>
+                    <div class="text">
+                        <h3>CPU Benchmark Online</h3>
+                        <p>Test your CPU performence and compare your scores to others.  It makes use of all your cores (true multithreading),  with the Web Workers API.</p>
+                        <br>
+                        <a href="benchmark/" target="_blank"><button>Go to</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section id="other-works" >
+           <div class="center text">
+                <h3>Other Works</h3>
+                <br>
+                <ul>
+                    <a target="_BLANK" href="https://www.tepatitlan.gob.mx/instituto-mujer/"><li>Instituto Tepatitlense de la mujer</li></a>
+                    <a target="_BLANK" href="https://www.tepatitlan.gob.mx/museo/"><li>Museo de la Ciudad</li></a>
+                    <a target="_BLANK" href="https://www.tepatitlan.gob.mx/comunicacion/"><li>Comunicación Social (Hand Made CMS)</li></a>
+                    <a target="_BLANK" href="https://tepatitlan.gob.mx/FeriaTepabril/"><li>Feria Tepabril</li></a>
+                    <li>SIPOVIT (Sistema Informatico de la Policia Vial de Tepatitlán)</li>
+                    <li>Sistema Interno Catastral</li>
+                </ul>
+                <br><br>
+           </div>
+       </section>
+
+     
+
+        <section id="award" class="center">
+            <div>
+               
+                <div class="center">
+                    <div class="logo coin" depth="20" front="images/ceneval-front.png" back="images/ceneval-back.png"></div>
+
+                    <div class="text">
+                        <h3>Award</h3><br>
+                        <p style="color:#ddd;">Excellence performance at Ceneval Test</p><br>
+                        <p>"Computer Science"</p>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+        <section id="contact">
+            <div>
+                <div class="center">
+                    <h3>Contact</h3>
+                    <br>
+                    <p class="contact">You can contact me with this e-mail: <a href="mailto:ldrm.dev@gmail.com">ldrm.dev@gmail.com</a></p>
+                    <br>
+                    <p class="note">The animation in "About me" section was <del>stolen from</del> <span>made by</span>
+                        <a target="_blank" href="https://dribbble.com/shots/3853143-Tech-animation">@Laura Reen</a></p>
+            
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
     
 </body>
 </html>
